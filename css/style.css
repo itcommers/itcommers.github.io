@@ -14,7 +14,7 @@ header {
 	padding-bottom: 22px;
 }
 .header-pretitle {
-		padding-top: 102px;
+		margin-top: 102px;
 }
 .header-title {
 	font-size: 48px;
@@ -144,3 +144,8 @@ margin-bottom: 13px;
 	padding: 12px 40px;
 
 }
+@media (max-width: 1200px) {
+.header-pretitle {
+		margin-top: 102px;
+}
+{	
