@@ -149,7 +149,8 @@ margin-bottom: 13px;
 }
 .footer-button:hover {
 background-color: #fff;
-color: #3a7dfd;	
+color: #3a7dfd;
+transition: 0.2s;	
 }
 @media (max-width: 1200px) {
 .header-pretitle {
