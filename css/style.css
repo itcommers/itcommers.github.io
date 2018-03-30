@@ -148,4 +148,12 @@ margin-bottom: 13px;
 .header-pretitle {
 		margin-top: 60px;
 }
-{	
+}	
+@media (max-width: 992px) {
+.header-img {
+	display: none;
+	}
+	.header-pretitle {
+		margin-top: 10px;
+}
+	}		
