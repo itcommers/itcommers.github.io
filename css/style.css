@@ -35,6 +35,9 @@ header {
 	padding: 17px 55px;
 	margin-top: 33px;
 }
+.header-button:hover {
+	box-shadow: none;
+}
 header small {
 	font-size: 12px;
 	display: block;
