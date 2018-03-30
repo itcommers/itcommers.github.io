@@ -34,6 +34,7 @@ header {
 	font-weight: 700;
 	padding: 17px 55px;
 	margin-top: 33px;
+	transition: 0.2s;
 }
 .header-button:hover {
 	box-shadow: none;
