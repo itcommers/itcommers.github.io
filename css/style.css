@@ -174,3 +174,15 @@ margin-bottom: 13px;
 	padding: 8px 35px;
 	}
 }
+@media (max-width: 768px) {
+.portfolio-col-1 {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-botton: 40px;
+	}
+.portfolio-col-2 {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+}
