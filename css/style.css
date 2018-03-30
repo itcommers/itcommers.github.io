@@ -153,7 +153,24 @@ margin-bottom: 13px;
 .header-img {
 	display: none;
 	}
-	.header-pretitle {
-		margin-top: 10px;
+.header-pretitle {
+	margin-top: 10px;
+	}
+.footer-author {
+	font-size: 18px;
+			}
+.footer-text {
+	font-size: 14px;
+			}
+.social-block a {
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+.social-block img {
+	widht: 30px;
+	}
+.footer-button {
+	font-size: 14px;
+	padding: 8px 35px;
+	]
 }
-	}		
