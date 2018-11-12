@@ -25,7 +25,7 @@ header {
 		margin-top: 20px;
 }
 .header-button {
-	box-shadow: 10px 10px 15px 12px rgba(18, 61, 145, 0.83);
+	box-shadow: 5px 5px 8px 8px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
 	color: #072b6f;
@@ -33,6 +33,7 @@ header {
 	font-weight: 700;
 	padding: 17px 55px;
 	margin-top: 33px;
+	margin-bottom: 33px;
 	transition: 0.2s;
 }
 .header-button:hover {
