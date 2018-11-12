@@ -50,17 +50,49 @@ header small {
 	max-width: 210px;
 
 }
+/*Секция технологии*/
+.technology {
+	background-color: #dddddd;
+	padding-top: 44px;
+	padding-bottom: 10px;
+
+}
+.technology-title {
+	text-transform: uppercase;
+	color: #072b6f;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.technology-block {
+	background-color: #ffffff;
+	padding-top: 29px;
+	padding-bottom: 44px;
+
+}
+.technology-text {
+	font-size: 14px;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+.technology-block h3 {
+  font-size: 18px;
+  color: #072bbf;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
 /*Секция портфолио*/
 .portfolio {
 	background-color: #dddddd;
 	padding-top: 44px;
-	padding-bottom: 71px;
+	padding-bottom: 50px;
 
 }
 .portfolio-block {
 	background-color: #ffffff;
 	padding-top: 29px;
-	padding-bottom: 44px;
+	padding-bottom: 40px;
 
 }
 .portfolio-title {
@@ -79,6 +111,7 @@ text-align: center;
 }
 .portfolio-col-1 {
 	padding-left: 50px;
+	padding-top: 30px;
 	
 }
 .portfolio-col-2 {
@@ -101,24 +134,11 @@ text-align: center;
   color: #072b6f;
   font-weight: 400;
 }
-/*.portfolio {
-  font-size: 18px;
-  font-family: "Roboto";
-  color: rgb(7, 43, 111);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  position: absolute;
-  left: 618.844px;
-  top: 594.7px;
-  z-index: 61;
-}*/
-/* Оформление подвала */
+
 footer {
 	background-color: #3a7dfd;
 	color: #ffffff;
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 110px;
 }
 .footer-author {
@@ -136,8 +156,11 @@ footer {
 	margin-left: 13px;
 	margin-right: 13px;
 }
-.footer-cta {
+.footer-block-cta {
 margin-bottom: 13px;
+}
+.footer-block {
+	text-align: center;
 }
 .footer-button {
 	display: inline-block;
@@ -147,6 +170,7 @@ margin-bottom: 13px;
 	font-size: 18px;
 	border-radius: 50px;
 	padding: 12px 40px;
+	outline: none;
 }
 .footer-button:hover {
 background-color: #fff;
