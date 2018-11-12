@@ -37,9 +37,17 @@ header {
 	transition: 0.2s;
 	outline: none;
 }
+.header-button a {
+	text-decoration: none;
+	color: #072bbf;
+	visited:#072bbf;
+	hover:#072bbf;
+	active:#072bbf; 
+}
 .header-button:hover {
 	box-shadow: none;
 }
+
 header small {
 	font-size: 12px;
 	display: block;
