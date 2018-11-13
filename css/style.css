@@ -120,10 +120,11 @@ text-align: center;
 .portfolio-col-1 {
 	padding-left: 50px;
 	padding-top: 30px;
+	margin-bottom: 50px;
 	
 }
 .portfolio-col-2 {
-		padding-right: 50px;
+	padding-right: 50px;
 }
 .portfolio-block h3 {
   font-size: 18px;
