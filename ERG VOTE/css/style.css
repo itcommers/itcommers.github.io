@@ -200,7 +200,7 @@ font-size: 14px;
 
 }
 
-/*mobile*/
+/*for mobile*/
 @media (max-width: 400px) {
 .hide-logo {
 display: none;
@@ -285,6 +285,13 @@ font-weight: 400;
     display: none;
 }
 }
+/*  for laptop*/
+@media (max-width: 1440px) {
+
+
+
+}
+
 
 
 
