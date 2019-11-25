@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#81301F">
+  <link rel="shortcut icon" href="img/favicon/16.ico">
+  <link rel="apple-touch-icon" href="img/favicon/57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+
+  <!-- libs.min.css includes: jQuery, fancybox.css, slick.css, responsive-tabs.css -->
+  <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>КухМистер</title>
+</head>
+
+<body>
+
+<section class="top-section" id="top-section">
+  <header class="header">
+    <div class="h-top" id="h-top">
+      <div class="wrapper h-top-wr">
+        <div class="h-top-left">
+          <a href="index.html" class="logo">
+            <img src="img/logo.jpg" alt="">
+            <span>КухМистер</span>
+          </a>
+          <div class="h-feat">
+            <div>Премиальное <b>качество</b></div>
+            <div>Доступные <b>цены</b></div>
+          </div>
+          <div class="h-contacts">
+            <a href="tel:+79266776655" class="phone">+7 (926) 677-66-55</a>
+            <div>Зеленоград, Георгиевский проспект, дом 37</div>
+          </div>
+        </div>
+        <button class="btn order-recall">Обратный звонок</button>
+      </div><!-- /.wrapper -->
+    </div><!-- /.h-top -->
+    <nav class="h-nav" id="h-nav">
+      <ul>
+        <li><a href="#top-section">Главная</a></li>
+        <li><a href="#about-section">О нас</a></li>
+        <li><a href="#tabs-container" data-tab="1">Коллекция Классика</a></li>
+        <li><a href="#tabs-container" data-tab="2">Коллекция Модерн</a></li>
+        <li><a href="#tabs-container" data-tab="3">Коллекция Кантри</a></li>
+        <li><a href="#map-section">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="top-slider-cont">
+    <div class="top-slider" id="top-slider">
+      <!-- slide begin -->
+      <div class="top-slide">
+        <img src="img/1slide.png" alt="">
+        <div class="wrapper slide-text">
+          <div>
+            <div class="underlined">На фасады в ярких декорах</div>
+            <div class="large">-20%</div>
+          </div>
+          <div class="btns-row">
+            <a href="inner.html" class="btn arrowed">Узнать больше</a>
+            <button class="btn tr catalog-btn">Заказать электронный каталог</button>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide begin -->
+      <div class="top-slide">
+        <img src="img/1slide.png" alt="">
+        <div class="wrapper slide-text">
+          <div>
+            <div class="underlined">Каждому заказчику подарок -</div>
+            <div class="large">В подарок!</div>
+          </div>
+          <div class="btns-row">
+            <a href="inner.html" class="btn arrowed">Узнать больше</a>
+            <button class="btn tr catalog-btn">Заказать электронный каталог</button>
+          </div>
+        </div>
+      </div>
+      <!-- slide end -->
+    </div>
+    <div class="top-arrows-holder">
+      <button class="arr prev" id="top-prev"></button>
+      <button class="arr next" id="top-next"></button>
+    </div>
+    <div class="dots-holder" id="dots-holder">
+    </div>
+  </div><!-- /.top-slider-cont -->
+</section><!-- /.top-section -->
+
+<section class="catalog-section">
+    <span class="e e1"><i></i></span>
+  <span class="e e2"><i></i></span>
+  <span class="e e3"><i></i></span>
+  <div class="wrapper">
+    <h2>КухМистер представляет</h2>
+    <div class="subtext">Выберите вашу кухню</div>
+    <div class="tabs-container" id="tabs-container">
+      <ul class="tab-anchors">
+
+        <li>
+          <a href="#tab-1" id="tab-1-anchor" class="tab-anchor">
+            <h3 class="coll-heading">Коллекция <strong>Классика</strong></h3>
+            <div class="coll-heading-img">
+              <img src="img/samples/a1.jpg" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#tab-2" id="tab-2-anchor" class="tab-anchor">
+            <h3 class="coll-heading">Коллекция <strong>Модерн</strong></h3>
+            <div class="coll-heading-img">
+              <img src="img/samples/a2.jpg" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#tab-3" id="tab-3-anchor" class="tab-anchor">
+            <h3 class="coll-heading">Коллекция <strong>Кантри</strong></h3>
+            <div class="coll-heading-img">
+              <img src="img/samples/a3.jpg" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tabs-wr" id="tabs-wr">
+
+        <div class="catalog-tab" id="tab-1">
+          <div class="tab-inner-wr">
+            <div class="item">
+              <img src="img/samples/p1.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <!-- =========================== попап описание кухни (следует сразу за своим a.item)=========================== -->
+            <div class="modal-cont popup-desc">
+              <div class="popup-in popup-desc-in">
+                <button class="modal-close">&#10006;</button>
+                <div class="popup-desc-main">
+                  <a href="img/samples/i-lg.jpg" class="fancy i-lg">
+                    <img src="img/samples/i-lg.jpg" alt="">
+                  </a>
+                  <div class="popup-desc-title">
+                    <h3>Кухня Топмайсер 1</h3>
+                    <div>
+                      <span class="footnote">Стоимость базовой комплектации </span>
+                      <div class="price">от <span>67000</span> руб</div>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                  <div class="popup-desc-row">
+                    <button class="btn arrowed order-recall">Оставить заявку</button>
+                    <button class="btn white arrowed work-popup-btn">Узнать больше</button>
+                  </div>
+                  <div class="similar-block">
+                    <div class="similar-title">
+                      <h3>Вместе с этим покупают</h3>
+                      <div class="similar-arrows">
+                        <button class="similar-arr prev" id="similar-prev"></button>
+                        <button class="similar-arr next" id="similar-next"></button>
+                      </div>
+                    </div>
+                    <div class="similar-slider-wr">
+                      <div class="similar-slider">
+                        <a href="img/samples/i-md.jpg" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="img/samples/i-md.jpg" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="img/samples/i-md.jpg" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="img/samples/i-md.jpg" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                      </div><!-- /.similar-slider -->
+                    </div><!-- /.similar-slider-wr -->
+                  </div><!-- /.similar-block -->
+                </div><!-- /.popup-desc-main -->
+                <div class="popup-desc-aside">
+                  <h4>Возможное исполнение в следующих декорах</h4>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                </div><!-- /.popup-desc-aside -->
+              </div><!-- /.popup-desc-in -->
+            </div><!-- /.popup-desc -->
+            <!-- =========================== /попап описание кухни =========================== -->
+            <!-- =========================== popup Описание работы =========================== -->
+            <div class="modal-cont work-popup hidden">
+              <div class="popup-in">
+                <button class="modal-close work-popup-close">&#10006;</button>
+                <a href="img/samples/img-lg.jpg" class="fancy">
+                  <img src="img/samples/img-lg.jpg" alt="">
+                </a>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse incidunt perspiciatis, tempore quod tempora minima beatae molestias optio maxime voluptatum illo blanditiis? Aliquid, magnam.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <div class="price-wr">
+                  <span>Стоимость базовой комплектации:</span>
+                  <span class="price">от <span>66953</span> руб</span>
+                </div>
+              </div><!-- /.popup-in -->
+            </div>
+            <!-- =========================== /popup Описание работы =========================== -->
+
+            <div class="item">
+              <img src="img/samples/p2.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика” Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <!-- =========================== попап описание кухни =========================== -->
+            <div class="modal-cont popup-desc">
+              <div class="popup-in popup-desc-in">
+                <button class="modal-close">&#10006;</button>
+                <div class="popup-desc-main">
+                  <a href="img/samples/i-lg.jpg" class="fancy i-lg">
+                    <img src="img/samples/i-lg.jpg" alt="">
+                  </a>
+                  <div class="popup-desc-title">
+                    <h3>Кухня Топмайсер 2</h3>
+                    <div>
+                      <span class="footnote">Стоимость базовой комплектации </span>
+                      <div class="price">от <span>67000</span> руб</div>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                  <div class="popup-desc-row">
+                    <button class="btn arrowed order-recall">Оставить заявку</button>
+                    <button class="btn white arrowed work-popup-btn">Узнать больше</button>
+                  </div>
+                  <div class="similar-block">
+                    <div class="similar-title">
+                      <h3>Вместе с этим покупают</h3>
+                      <div class="similar-arrows">
+                        <button class="similar-arr prev" id="similar-prev"></button>
+                        <button class="similar-arr next" id="similar-next"></button>
+                      </div>
+                    </div>
+                    <div class="similar-slider-wr">
+                      <div class="similar-slider">
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                      </div><!-- /.similar-slider -->
+                    </div><!-- /.similar-slider-wr -->
+                  </div><!-- /.similar-block -->
+                </div><!-- /.popup-desc-main -->
+                <div class="popup-desc-aside">
+                  <h4>Возможное исполнение в следующих декорах</h4>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                </div><!-- /.popup-desc-aside -->
+              </div><!-- /.popup-desc-in -->
+            </div><!-- /.popup-desc -->
+            <!-- =========================== /попап описание кухни =========================== -->
+            <!-- =========================== popup Описание работы =========================== -->
+            <div class="modal-cont work-popup hidden">
+              <div class="popup-in">
+                <button class="modal-close work-popup-close">&#10006;</button>
+                <a href="img/samples/img-lg.jpg" class="fancy">
+                  <img src="img/samples/img-lg.jpg" alt="">
+                </a>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse incidunt perspiciatis, tempore quod tempora minima beatae molestias optio maxime voluptatum illo blanditiis? Aliquid, magnam.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <div class="price-wr">
+                  <span>Стоимость базовой комплектации:</span>
+                  <span class="price">от <span>66953</span> руб</span>
+                </div>
+              </div><!-- /.popup-in -->
+            </div>
+            <!-- =========================== /popup Описание работы =========================== -->
+
+            <div class="item">
+              <img src="img/samples/p3.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <!-- =========================== попап описание кухни =========================== -->
+            <div class="modal-cont popup-desc">
+              <div class="popup-in popup-desc-in">
+                <button class="modal-close">&#10006;</button>
+                <div class="popup-desc-main">
+                  <a href="img/samples/i-lg.jpg" class="fancy i-lg">
+                    <img src="img/samples/i-lg.jpg" alt="">
+                  </a>
+                  <div class="popup-desc-title">
+                    <h3>Кухня Топмайсер 3</h3>
+                    <div>
+                      <span class="footnote">Стоимость базовой комплектации </span>
+                      <div class="price">от <span>67000</span> руб</div>
+                    </div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                  <div class="popup-desc-row">
+                    <button class="btn arrowed order-recall">Оставить заявку</button>
+                    <button class="btn white arrowed work-popup-btn">Узнать больше</button>
+                  </div>
+                  <div class="similar-block">
+                    <div class="similar-title">
+                      <h3>Вместе с этим покупают</h3>
+                      <div class="similar-arrows">
+                        <button class="similar-arr prev" id="similar-prev"></button>
+                        <button class="similar-arr next" id="similar-next"></button>
+                      </div>
+                    </div>
+                    <div class="similar-slider-wr">
+                      <div class="similar-slider">
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                        <a href="javascript:void(0);" class="similar-slide fancy"><img src="img/samples/i-md.jpg" alt=""></a>
+                      </div><!-- /.similar-slider -->
+                    </div><!-- /.similar-slider-wr -->
+                  </div><!-- /.similar-block -->
+                </div><!-- /.popup-desc-main -->
+                <div class="popup-desc-aside">
+                  <h4>Возможное исполнение в следующих декорах</h4>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                  <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
+                    <img src="img/samples/i-sm.jpg" alt="">
+                  </a>
+                </div><!-- /.popup-desc-aside -->
+              </div><!-- /.popup-desc-in -->
+            </div><!-- /.popup-desc -->
+            <!-- =========================== /попап описание кухни =========================== -->
+            <!-- =========================== popup Описание работы =========================== -->
+            <div class="modal-cont work-popup hidden">
+              <div class="popup-in">
+                <button class="modal-close work-popup-close">&#10006;</button>
+                <a href="img/samples/img-lg.jpg" class="fancy">
+                  <img src="img/samples/img-lg.jpg" alt="">
+                </a>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse incidunt perspiciatis, tempore quod tempora minima beatae molestias optio maxime voluptatum illo blanditiis? Aliquid, magnam.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <div class="price-wr">
+                  <span>Стоимость базовой комплектации:</span>
+                  <span class="price">от <span>66953</span> руб</span>
+                </div>
+              </div><!-- /.popup-in -->
+            </div>
+            <!-- =========================== /popup Описание работы =========================== -->
+
+
+            <div class="item">
+              <img src="img/samples/p4.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика” Кухня “Классика”</div>
+                <div class="price">от <span>100000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p5.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p6.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /tab -->
+
+        <div class="catalog-tab" id="tab-2">
+          <div class="tab-inner-wr">
+            <div class="item">
+              <img src="img/samples/p4.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Модерн”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p1.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Модерн”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /tab -->
+
+        <div class="catalog-tab" id="tab-3">
+          <div class="tab-inner-wr">
+            <div class="item">
+              <img src="img/samples/p2.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Кантри”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /tab -->
+      </div><!-- /.tabs-wr -->
+    </div><!-- /.tabs-container -->
+    <button class="btn">Загрузить еще</button>
+    <div class="btns-row">
+      <a href="inner.html" class="btn arrowed">Узнать больше</a>
+      <button class="btn tr catalog-btn">Заказать электронный каталог</button>
+    </div>
+  </div><!-- /.wrapper -->
+
+</section><!-- /.catalog-section -->
+
+<section class="about-section" id="about-section">
+  <div class="wrapper">
+    <h2>О компании</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et</p>
+    <div class="about-lg-slider-cont">
+      <div class="about-lg-slider" id="about-lg-slider">
+        <img src="img/samples/aboutSlider/1.jpg" alt="">
+        <img src="img/samples/aboutSlider/2.jpg" alt="">
+        <img src="img/samples/aboutSlider/3.jpg" alt="">
+        <img src="img/samples/aboutSlider/4.jpg" alt="">
+        <img src="img/samples/aboutSlider/5.jpg" alt="">
+        <img src="img/samples/aboutSlider/6.jpg" alt="">
+        <img src="img/samples/aboutSlider/7.jpg" alt="">
+        <img src="img/samples/aboutSlider/8.jpg" alt="">
+        <img src="img/samples/aboutSlider/9.jpg" alt="">
+        <img src="img/samples/aboutSlider/10.jpg" alt="">
+      </div>
+      <button class="about-arr prev" id="about-prev"></button>
+      <button class="about-arr next" id="about-next"></button>
+    </div>
+    <div class="about-sm-slider-cont">
+      <div class="about-sm-slider" id="about-sm-slider">
+        <!-- стилями приводятся в квадратный формат, согл. макету. Края скрыты -->
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/1.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/2.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/3.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/4.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/5.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/6.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/7.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/8.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/9.jpg" alt="">
+        </div>
+        <div class="sm-slide">
+          <img src="img/samples/aboutSlider/10.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div><!-- /.wrapper -->
+</section><!-- /.about-section -->
+
+<section class="features-section">
+  <div class="wrapper">
+    <h2>7 плюсов наших кухонь</h2>
+    <ul class="feat-list">
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i1.png" alt=""></span>
+        <span>Гарантия <b>3 года</b></span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i2.png" alt=""></span>
+        <span>Возможность <b>рассрочки оплаты</b></span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i3.png" alt=""></span>
+        <span><b>Бесплатный</b> дизайн-проект и просчет</span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i4.png" alt=""></span>
+        <span><b>Минимальные</b> сроки производства</span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i5.png" alt=""></span>
+        <span>Оперативная <b>доставка</b> и качественный <b>монтаж</b></span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i6.png" alt=""></span>
+        <span>Использование <br><b>эко-материалов</b></span>
+      </li>
+      <li class="feat-item">
+        <span class="feat-img"><img src="img/icons/i7.png" alt=""></span>
+        <span>Возможность выбрать модель <b>в собственном салоне</b></span>
+      </li>
+    </ul>
+  </div><!-- /.wrapper -->
+  <span class="e e4"><i></i></span>
+  <span class="e e5"><i></i></span>
+  <span class="e e6"><i></i></span>
+</section><!-- /.features-section -->
+
+<section class="gallery-section">
+  <div class="wrapper">
+    <h2>Наши работы</h2>
+    <div class="subtext">Мы выполнили более 1500 дизайн-проектов в 22 разных стилях. Выберите стиль и ознакомьтесь с нашими работами</div>
+    <div class="grid">
+      <a href="img/samples/e1.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 1">
+        <img src="img/samples/e1.jpg" alt="">
+      </a>
+      <a href="img/samples/e2.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 2">
+        <img src="img/samples/e2.jpg" alt="">
+      </a>
+      <a href="img/samples/e3.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 3">
+        <img src="img/samples/e1.jpg" alt="">
+      </a>
+      <a href="img/samples/e1.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 4">
+        <img src="img/samples/e1.jpg" alt="">
+      </a>
+      <a href="img/samples/e2.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 5">
+        <img src="img/samples/e2.jpg" alt="">
+      </a>
+      <a href="img/samples/e3.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 6">
+        <img src="img/samples/e1.jpg" alt="">
+      </a>
+      <a href="img/samples/e1.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 7">
+        <img src="img/samples/e1.jpg" alt="">
+      </a>
+      <a href="img/samples/e2.jpg" class="fancy" data-fancybox="gallery" data-caption="Описание фотографии 8">
+        <img src="img/samples/e2.jpg" alt="">
+      </a>
+    </div><!-- /.grid -->
+    <a href="inner.html" class="btn arrowed">Узнать больше</a>
+  </div><!-- /.wrapper -->
+  <span class="e e7"><i></i></span>
+</section><!-- /.gallery-section -->
+
+<section class="map-section" id="map-section">
+  <div class="map" id="map"></div>
+</section>
+
+<footer class="footer">
+  <div class="wrapper f-wrapper">
+
+    <div class="f-left">
+      <a href="index.html" class="logo">
+        <img src="img/logo.jpg" alt="">
+        <span>КухМистер</span>
+      </a>
+      <p class="copy">&copy; 2019 КМ КухМистер. All rights reserved</p>
+      <a href="javascript:void(0);" class="policy">Политика конфиденциальности</a>
+    </div>
+
+    <nav class="f-nav">
+      <ul>
+        <li><a href="#top-section">Главная</a></li>
+        <li><a href="#about-section">О нас</a></li>
+        <li><a href="#contacts-section">Контакты</a></li>
+        <li><a href="#tabs-container" data-tab="1">Коллекция Классика</a></li>
+        <li><a href="#tabs-container" data-tab="2">Коллекция Модерн</a></li>
+        <li><a href="#tabs-container" data-tab="3">Коллекция Кантри</a></li>
+      </ul>
+    </nav>
+
+    <div class="f-right">
+      <a href="tel:+79266776655" class="phone">+7 (926) 677-66-55</a>
+      <button class="btn order-recall">Обратный звонок</button>
+      <ul class="social">
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/fb.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/ig.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /.wrapper -->
+  <span class="e e8"><i></i></span>
+</footer>
+
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- =========================== mobile navigation =========================== -->
+<div class="btn-menu" id="btn-menu"><span><i></i></span></div>
+<div class="mob-cont" id="mob-cont">
+  <div class="mob-top">
+    <a href="index.html" class="logo mob-logo">
+      <img src="img/logo.jpg" alt="">
+      <span>КухМистер</span>
+    </a>
+  </div>
+  <nav class="mob-nav" id="mob-nav">
+    <ul>
+      <li><a href="#top-section">Главная</a></li>
+      <li><a href="#about-section">О нас</a></li>
+      <li><a href="#tabs-wr" data-tab="1">Коллекция Классика</a></li>
+      <li><a href="#tabs-wr" data-tab="2">Коллекция Модерн</a></li>
+      <li><a href="#tabs-wr" data-tab="3">Коллекция Кантри</a></li>
+      <li><a href="#map-section">Контакты</a></li>
+    </ul>
+  </nav>
+  <ul class="mob-contacts">
+    <li>
+      <a href="tel:+79266776655">7 (926) 677-66-55</a>
+    </li>
+  </ul>
+  <div class="mob-address">Зеленоград, Георгиевский проспект, дом 37</div>
+  <ul class="social">
+    <li>
+      <a href="javascript:void(0);">
+        <img src="img/icons/fb.png" alt="">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">
+        <img src="img/icons/ig.png" alt="">
+      </a>
+    </li>
+  </ul>
+  <button class="btn order-recall">Обратный звонок</button>
+</div><!--/.mob-cont--><!-- /mobile navigation -->
+
+
+<!-- =========================== popup Рассчитать заказ =========================== -->
+<div class="modal-cont hidden" id="calculate-popup">
+  <div class="popup-in">
+    <button class="modal-close">&#10006;</button>
+    <h3>Рассчитать заказ</h3>
+    <form>
+      <div class="radios">
+        <input type="radio" name="scheme" id="scheme-1" checked>
+        <label for="scheme-1">Прямая кухня</label>
+        <input type="radio" name="scheme" id="scheme-2">
+        <label for="scheme-2">Угловая кухня</label>
+        <input type="radio" name="scheme" id="scheme-3" class="other-desc-radio">
+        <label for="scheme-3">Другое</label>
+        <input type="text" id="other-desc">
+      </div>
+      <div class="sizes">
+        <span>Размер кухни,см</span>
+        <div>
+          <input type="text" maxlength="4" placeholder="180" class="num-input">&mdash;
+          <input type="text" maxlength="4" placeholder="240" class="num-input">
+        </div>
+      </div>
+      <input type="text" placeholder="Имя" class="name-inp">
+      <input type="tel" placeholder="Телефон" class="phone-inp">
+      <input type="email" placeholder="Email" class="email-inp">
+      <textarea placeholder="Комментарий*"></textarea>
+      <div class="footnote">*Вы можете обозначить иную конфигурацию кухни (например, прямая с островом), указать, какая встроенная техника обязательна, сообщить о других элементах, которые необходимо включить в расчет</div>
+      <button type="submit" class="btn arrowed">Рассчитать</button>
+    </form>
+  </div><!-- /.popup-in -->
+</div>
+
+<!-- =========================== popup Обратный звонок =========================== -->
+<div class="modal-cont recall-popup hidden" id="recall-popup">
+  <div class="popup-in">
+    <button class="modal-close">&#10006;</button>
+    <h3>Обратный звонок</h3>
+    <p>Заполните форму и мы перезвоним Вам<br> в ближайшее время</p>
+    <form>
+      <input type="text" placeholder="Имя" class="name-inp">
+      <input type="tel" placeholder="Телефон" class="phone-inp">
+      <button type="submit" class="btn arrowed">Узнать больше</button>
+    </form>
+  </div><!-- /.popup-in -->
+</div>
+
+<!-- =========================== popup Заказать каталог =========================== -->
+<div class="modal-cont catalog-popup hidden" id="catalog-popup">
+  <div class="popup-in">
+    <button class="modal-close">&#10006;</button>
+    <div class="catalog-img-wr">
+      <img src="img/catalog.png" alt="">
+    </div>
+    <h3>Заполните форму и мы пришлем электронный каталог на ваш email</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ut in reprehenderit in voluptate velit esse eu fugiat nulla pariatur.</p>
+    <form>
+      <input type="text" placeholder="Имя" class="name-inp">
+      <input type="tel" placeholder="Телефон" class="phone-inp">
+      <input type="email" placeholder="Email" class="email-inp">
+      <button type="submit" class="btn arrowed">Узнать больше</button>
+    </form>
+  </div><!-- /.popup-in -->
+</div>
+
+
+<!-- libs.min.js includes: jQuery, fancybox.js, slick.js, responsive-tabs.js, maskedinput.js -->
+<script src="js/libs.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwGZ72KU6ICIrtjGICVnQn8-Y_BE5meP4"></script>
+<script src="js/googlemap.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
