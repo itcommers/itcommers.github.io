@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="img/favicon/16.ico">
+  <link rel="apple-touch-icon" href="img/favicon/57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+  <link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css"><!-- for this page only -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title>Оформление заказа</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top" id="header-top">
+      <div class="wrapper">
+
+        <div class="header-top-l">
+          <a href="index.html" class="logo-link">
+            <img src="img/common/logo.png" alt="">
+          </a>
+          <div class="work-info">
+            <p class="time">с 09:00 до 04:00</p>
+            <button class="map-call">карта доставки</button>
+          </div>
+        </div>
+        <ul class="top-links">
+          <li><a href="actions.html">Акции и бонусы</a></li>
+          <li><a href="feedback.html">Обратная связь</a></li>
+          <li><a href="about.html">О компании</a></li>
+        </ul>
+
+        <div class="header-top-r">
+          <div class="phone-cont">
+            <a href="tel:+88008888888" class="phone">8 (800) 888-88-88</a>
+            <button class="call-btn">Перезвоните мне</button>
+          </div>
+          <a href="cart.html" class="cart-link" id="cart-link">
+            <img src="img/icons/cart.png" alt="">
+            <span class="cart-num">2</span>
+          </a>
+          <button class="auth-btn" id="auth-btn">Вход</button>
+        </div>
+
+      </div><!-- /.wrapper -->
+    </div><!-- /.header-top -->
+    <div class="header-bottom" id="header-bottom">
+      <div class="wrapper" id="header-bottom-wrapper">
+        <a href="index.html" class="sticky-logo">
+          <img src="img/common/logo.png" alt="">
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav-links">
+            <li><a href="catalog_pizzas.html">Пиццы</a></li>
+            <li><a href="catalog_pizzas.html">Бургеры</a></li>
+            <li><a href="catalog_pizzas.html">Суши</a></li>
+            <li><a href="catalog_pizzas.html">Салаты</a></li>
+            <li><a href="catalog_pizzas.html">WOK</a></li>
+            <li><a href="catalog_pizzas.html">Горячее</a></li>
+            <li><a href="catalog_pizzas.html">Напитки</a></li>
+            <li><a href="catalog_pizzas.html">Десерты</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.wrapper -->
+    </div><!-- /.header-bottom -->
+
+  </header>
+
+  <!-- ============================== mobile nav ============================== -->
+  <div class="btn-menu" id="btn-menu"><span></span></div>
+  <div class="mob-cont" id="mob-cont">
+      <div class="mob-top">
+          <a href="index.html" class="mob-logo">
+              <img src="img/common/logo.png" alt="">
+          </a>
+          <span class="close" id="close">X</span>
+      </div>
+      <div class="mob-info-cont">
+        <div class="work-info">
+          <p class="time">с 09:00 до 04:00</p>
+          <button class="map-call">карта доставки</button>
+        </div>
+        <div class="phone-cont">
+          <a href="tel:+88008888888" class="phone">8 (800) 888-88-88</a>
+          <button class="call-btn">Перезвоните мне</button>
+        </div>
+      </div>
+      
+      <nav class="mob-nav" id="mob-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog_pizzas.html">Пиццы</a></li>
+            <li><a href="catalog_pizzas.html">Бургеры</a></li>
+            <li><a href="catalog_pizzas.html">Суши</a></li>
+            <li><a href="catalog_pizzas.html">Салаты</a></li>
+            <li><a href="catalog_pizzas.html">WOK</a></li>
+            <li><a href="catalog_pizzas.html">Горячее</a></li>
+            <li><a href="catalog_pizzas.html">Напитки</a></li>
+            <li><a href="catalog_pizzas.html">Десерты</a></li>
+          </ul>
+          <ul>
+            <li><a href="actions.html">Акции и бонусы</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+            <li><a href="about.html">О компании</a></li>
+          </ul>
+      </nav>
+  </div><!--/.mob-cont-->
+
+  <!-- ============================== order form ============================== -->
+  <section>
+    <div class="wrapper">
+      <h1>Оформление заказа</h1>
+      <form action="" class="order-form">
+        <h4>Кому доставить</h4>
+        <div class="form-row">
+          <span>Имя</span>
+          <input type="text" class="length-md">
+        </div>
+        <div class="form-row">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (___) ___-__-__"  class="length-md">
+        </div>
+        <h4>Куда доставить</h4>
+        <div class="form-row">
+          <span>Город</span>
+          <select name="" data-placeholder="не выбрано" class="location-select">
+            <option value=""></option><!-- leave empty to show placeholder -->
+            <option value="">Lorem ipsum dolor 1</option>
+            <option value="">Lorem ipsum dolor 2</option>
+            <option value="">Lorem ipsum dolor 3</option>
+            <option value="">Lorem ipsum dolor 4</option>
+            <option value="">Lorem ipsum dm ipsum dm ipsum dolor sit amet, consectetur adipisicing.</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <span>Метро</span>
+          <select name="" data-placeholder="не выбрано" class="location-select">
+            <option value=""></option>
+            <option value="">Lorem ipsum dolor 1</option>
+            <option value="">Lorem ipsum dolor 2</option>
+            <option value="">Lorem ipsum dolor 3</option>
+            <option value="">Lorem ipsum dolor 4</option>
+            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
+            <option value="">Lorem ipsum dolor 1</option>
+            <option value="">Lorem ipsum dolor 2</option>
+            <option value="">Lorem ipsum dolor 3</option>
+            <option value="">Lorem ipsum dolor 4</option>
+            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
+            <option value="">Lorem ipsum dolor 1</option>
+            <option value="">Lorem ipsum dolor 2</option>
+            <option value="">Lorem ipsum dolor 3</option>
+            <option value="">Lorem ipsum dolor 4</option>
+            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <span class="top-aligned">Адрес</span>
+          <div class="double-row">
+            <div class="row-top">
+              <input type="text" placeholder="введите название улицы">
+              <div class="small-inputs-cont">
+                <input type="text" placeholder="дом" class="length-sm">
+                <input type="text" placeholder="корпус" class="length-sm">
+                <input type="text" placeholder="кв.офис" class="length-sm">
+                <input type="text" placeholder="подъезд" class="length-sm">
+              </div>
+            </div>
+            <div class="row-bottom">
+              <input type="text" placeholder="ключ домофона">
+              <input type="text" placeholder="этаж" class="length-sm">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <span class="top-aligned">Дата и время доставки</span>
+          <div class="double-row">
+            <div class="asap-cont">
+              <input type="checkbox" id="asap">
+              <label for="asap"></label>
+              <span>как можно раньше</span>
+            </div>
+            <div class="date-select-cont">
+              <div class="time-input-cont">
+                <input type="text" placeholder="выберите дату" id="datepicker" class="time-input">
+              </div>
+              <select name="" data-placeholder="выберите время" class="time-input">
+                <option value=""></option>
+                <option value="">18:00</option>
+                <option value="">18:15</option>
+                <option value="">18:30</option>
+                <option value="">18:45</option>
+                <option value="">19:00</option>
+                <option value="">19:15</option>
+                <option value="">19:30</option>
+                <option value="">19:45</option>
+                <option value="">20:00</option>
+                <option value="">20:15</option>
+                <option value="">20:30</option>
+                <option value="">20:45</option>
+                <option value="">21:00</option>
+                <option value="">21:15</option>
+                <option value="">21:30</option>
+                <option value="">21:45</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <span class="top-aligned"><strong>Способ оплаты</strong></span>
+          <div class="pay-cont">
+            <input type="radio" name="payment" id="payment-1" checked>
+            <label for="payment-1">Наличными курьеру</label>
+            <input type="radio" name="payment" id="payment-2">
+            <label for="payment-2">Банковской картой</label>
+            <input type="radio" name="payment" id="payment-3">
+            <label for="payment-3">Сертификат</label>
+          </div>
+        </div>
+        <h4>Комментарий к заказу</h4>
+        <div class="submit-row">
+          <textarea name=""></textarea>
+          <div class="submit-cont">
+            <span class="order-sum">Ваш заказ на сумму:<span>2010 руб.</span></span>
+            <input type="submit" value="Подтвердить" class="submit-confirm-btn">
+          </div>
+        </div>
+      </form>
+    </div><!-- /.wrapper -->
+  </section>
+
+  <!-- ============================== footer ============================== -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-left">
+        <a href="index.html" class="logo-link">
+          <img src="img/common/logo2.png" alt="">
+        </a>
+        <div class="work-info">
+          <p class="time">с 09:00 до 04:00</p>
+          <button class="map-call">карта доставки</button>
+        </div>
+        <div class="phone-cont">
+          <a href="tel:+88008888888" class="phone">8 (800) 888-88-88</a>
+          <button class="call-btn">Перезвоните мне</button>
+        </div>
+      </div><!-- /.footer-left -->
+      <div class="footer-right">
+        <div class="footer-right-top">
+          <ul class="footer-links">
+            <li><a href="actions.html">Акции и бонусы</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+            <li><a href="about.html">О компании</a></li>
+          </ul>
+          <ul class="social">
+            <li>
+                <a href="javascript:void(0);">
+                  <img src="img/icons/vk.png" alt="">
+                </a>
+            </li>
+            <li> 
+                <a href="javascript:void(0);">
+                  <img src="img/icons/fb.png" alt="">
+                </a> 
+            </li>
+            <li> 
+                <a href="javascript:void(0);">
+                  <img src="img/icons/tw.png" alt="">
+                </a> 
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                  <img src="img/icons/ok.png" alt="">
+                </a>
+            </li>
+          </ul>
+        </div><!-- /.footer-right-top -->
+
+        <div class="footer-right-bottom">
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Пиццы</a></li>
+            <li><a href="javascript:void(0);">маргарита</a></li>
+            <li><a href="javascript:void(0);">4 сыра</a></li>
+            <li><a href="javascript:void(0);">курица и моцарелла</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Бургеры</a></li>
+            <li><a href="javascript:void(0);">кинг сайз</a></li>
+            <li><a href="javascript:void(0);">чиккен бургер</a></li>
+            <li><a href="javascript:void(0);">биг маг</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Суши</a></li>
+            <li><a href="javascript:void(0);">маки наки</a></li>
+            <li><a href="javascript:void(0);">уон наргки</a></li>
+            <li><a href="javascript:void(0);">бао рору</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Салаты</a></li>
+            <li><a href="javascript:void(0);">цезарь с курицей</a></li>
+            <li><a href="javascript:void(0);">оливье</a></li>
+            <li><a href="javascript:void(0);">шпинат и курица</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">WOK</a></li>
+            <li><a href="javascript:void(0);">драгон рору</a></li>
+            <li><a href="javascript:void(0);">калифорниа</a></li>
+            <li><a href="javascript:void(0);">унаги маги</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Горячее</a></li>
+            <li><a href="javascript:void(0);">бифштекс</a></li>
+            <li><a href="javascript:void(0);">лосось</a></li>
+            <li><a href="javascript:void(0);">индейка в соусе</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Напитки</a></li>
+            <li><a href="javascript:void(0);">чай с лимоном</a></li>
+            <li><a href="javascript:void(0);">лимонад</a></li>
+            <li><a href="javascript:void(0);">тархун</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="catalog_pizzas.html">Десерты</a></li>
+            <li><a href="javascript:void(0);">тирамису</a></li>
+            <li><a href="javascript:void(0);">мороженое с клубникой</a></li>
+            <li><a href="javascript:void(0);">икра</a></li>
+          </ul>
+        </div><!-- /.footer-right-bottom -->
+        
+      </div><!-- /.footer-right -->
+      <div class="copy">
+        <p>2018, ООО "Пицца"</p>
+      </div><!-- /.copy -->
+    </div><!-- /.wrapper -->
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ============================== modals windows ============================== -->
+  <!-- call-back modal -->
+  <div class="modal" id="callback-modal">
+    <h3 class="modal-heading">Укажите свой телефон<br>и мы перезвоним</h3>
+    <form action="">
+      <input type="tel" placeholder="Укажите номер телефона">
+      <div class="row">Мы используем Ваш телефон только для звонка</div>
+      <input type="submit" value="Свяжитесь со мной" class="modal-submit">
+    </form>
+  </div>
+
+  <!-- authorization modal -->
+  <div class="modal authorization-modal" id="authorization-modal">
+    <h3 class="modal-heading">Авторизация</h3>
+    <form action="">
+      <input type="tel" placeholder="Номер телефона">
+      <input type="text" placeholder="Пароль">
+      
+      <div class="row-justified">
+        <span>
+          <input type="checkbox" id="remember">
+          <label for="remember"></label>
+          <span>запомнить меня</span>
+        </span>
+        <a href="javascript:void(0);" class="modal-link" id="to-recover">Забыли пароль?</a>
+      </div>
+      <input type="submit" value="Авторизоваться" class="modal-submit">
+      <div class="row-justified">
+        <span>У Вас еще нет учетной записи?</span>
+        <a href="javascript:void(0);" class="modal-link" id="to-registration">Пройдите регистрацию</a>
+      </div>
+    </form>
+    <div class="auth-social-cont">
+      <span>Войти через социальную сеть:</span>
+      <ul class="social">
+        <li>
+            <button>
+              <img src="img/icons/vk.png" alt="">
+            </button>
+        </li>
+        <li> 
+            <button>
+              <img src="img/icons/fb.png" alt="">
+            </button> 
+        </li>
+        <li> 
+            <button>
+              <img src="img/icons/tw.png" alt="">
+            </button> 
+        </li>
+        <li>
+            <button>
+              <img src="img/icons/ok.png" alt="">
+            </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- registration modal -->
+  <div class="modal" id="registration-modal">
+    <h3 class="modal-heading">Регистрация</h3>
+    <form action="">
+      <input type="text" placeholder="Ваше имя">
+      <input type="tel" placeholder="Номер телефона">
+      <input type="text" placeholder="Пароль">
+      <div class="row">
+        <input type="checkbox" id="agreement">
+        <label for="agreement"></label>
+        <span>при регистрации я соглашаюсь с</span>
+        <a href="javascript:void(0);" class="modal-link non-padded">Правилами</a>
+      </div>
+      <input type="submit" value="Зарегистрироваться" class="modal-submit">
+      <div class="row">
+        <span>Вы уже зарегистрированы?</span>
+        <a href="javascript:void(0);" class="modal-link" id="to-authorization">Войти</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- recover password modal -->
+  <div class="modal" id="recover-modal">
+    <h3 class="modal-heading">Восстановление пароля</h3>
+    <form action="">
+      <input type="tel" placeholder="Укажите номер телефона">
+      <input type="submit" value="Восстановить" class="top-padded modal-submit">
+      <a href="javascript:void(0);" class="modal-link">Не удалось восстановить пароль?</a>
+    </form>
+  </div>
+
+  <!-- delivery map modal -->
+  <div class="modal map-modal" id="map-modal">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb2965b53afd3f7705b28a8c789e9875dd3afbca36c211b969e4ae0065c05782&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+    <span class="map-close" id="map-close">&#10006;</span>
+    <form action="" class="map-btns">
+      <input type="reset" value="Отмена" class="map-reset">
+      <input type="submit" value="Подтвердить" class="map-submit">
+    </form>
+  </div>
+
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="libs/jquery-ui/jquery-ui.min.js"></script><!-- for this page only -->
+  <script src="libs/jquery-ui/jquery.ui.datepicker-ru.js"></script><!-- for this page only -->
+  <script src="libs/formstyler/jquery.formstyler.js"></script><!-- for this page only -->
+  <script>
+    $(document).ready(function(){
+      $('#datepicker').click(function(e){
+        e.preventDefault();
+      });
+      $('#datepicker').datepicker({
+        minDate: new Date()
+      });
+
+      $('select').styler({
+        selectPlaceholder: true
+      });
+    });
+    $('#asap').change(function(){
+      if($(this).prop('checked')==true) {
+        $('.time-input').attr('disabled', true)
+        .trigger('refresh');
+        $('.date-select-cont').css('opacity', '.4');
+      } else {
+        $('.time-input').removeAttr('disabled')
+        .trigger('refresh');
+        $('.date-select-cont').css('opacity', '1');
+      }
+    });
+  </script><!-- for this page only -->
+  <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+
+
